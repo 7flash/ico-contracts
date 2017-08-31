@@ -17,6 +17,7 @@ contract('EtherToken', (accounts) => {
         assert.equal(symbol, 'ETH');
     });
 
+
     it('verifies the balance and supply after a deposit through the deposit function', async () => {
         let token = await EtherToken.new();
         await token.deposit({ value: 1000 });
